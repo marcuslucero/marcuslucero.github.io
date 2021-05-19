@@ -7,6 +7,13 @@ trigger:
 - master
 
 pool:
+- task: Code Insight Scan@2
+  inputs:
+    URL: 'http://localhost:8888/codeinsight'
+    Token: 'eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtbHVjZXJvIiwidXNlcklkIjoyLCJpYXQiOjE2MjE0NDUxOTV9.p95yo2Q_SDyPAnvz52K4Zy3OanHQyqHUd4topwrpHm_Lb1qRcUjbcXEVNZAoSbUW4B-4x7JDUeruI5RhBmGoSg'
+    ProjectName: 'ePortal-Azure'
+    Alias: 'eportal-azure'
+    Host: 'eportal-azure'
   vmImage: 'ubuntu-latest'
 
 steps:
